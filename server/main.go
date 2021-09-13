@@ -14,6 +14,6 @@ func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/article", handler.ArticleHandler)
 	router.HandleFunc("/category", handler.CategoyHandler)
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":5000", router))
 
 }
